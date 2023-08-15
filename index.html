@@ -267,8 +267,9 @@
         </header>
 
         <main class="row">
-            <div class="row text-center">
-                <div class="col-4">
+            <div class="row">
+
+                <div class="col-4 text-center">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -281,14 +282,64 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="btn btn-success">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mb-4 rounded-3 shadow-sm ">
+                        <div class="card-header py-3">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Username</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
 
+            <div class="row align-items-start">
+                <div class="col-12 text-center">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                            Как купить?
+                            </a>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            Как доставить?
+                            </button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                            Какая гарантия?
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                            Выберите понравившийся товар, добавьте в корзину и оформите заказ. Просто, быстро и без лишних заморочек!
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                            Мы предоставляем удобные варианты доставки: курьером на дом, пункты выдачи и почтой. Выберите удобный способ при оформлении заказа.
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                            Мы гарантируем качество нашей продукции. В случае проблем, обращайтесь в течение 30 дней после покупки — заменим или вернем деньги.
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
     </div>
+
+
+
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
